@@ -1,0 +1,39 @@
+{
+    "Cities": {
+        "Toronto": {
+            "Cinemas": [
+                "Scotiabank Theatre Toronto",
+                "Cineplex Cinemas Yonge-Dundas and VIP",
+                "Rainbow Cinemas Market Square"
+            ]
+        },
+        "Vancouver": {
+            "Cinemas": [
+                "Cineplex Odeon International Village Cinemas",
+                "Cineplex Cinemas Marine Gateway and VIP",
+                "Cineplex Cinemas Park Royal and VIP"
+            ]
+        },
+        "Montreal": {
+            "Cinemas": [
+                "Cinéma Banque Scotia Montréal",
+                "Cinéma Cineplex Forum",
+                "Cineplex Odeon Ste. Catherine"
+            ]
+        },
+        "Calgary": {
+            "Cinemas": [
+                "Cineplex Odeon Eau Claire Market Cinemas",
+                "Scotiabank Theatre Chinook",
+                "Cineplex Cinemas Seton and VIP"
+            ]
+        }
+    },
+    "Movies": [
+        "Avengers: Endgame",
+        "The Lion King",
+        "Aladdin",
+        "Toy Story 4",
+        "Armaggedon"
+    ]
+}

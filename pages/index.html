@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/perdomod.css">
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>PerdomoD - 991669214</title>
+</head>
+
+<body onload="startUp()">
+    <header class="header">
+        <h1>Movie Ticket Booking</h1>
+        <p id="subtitle"></p>
+    </header>
+
+    <main>
+        <section class="container">
+            <!-- <select id="app_cities-select">
+            </select>
+            <div id="app_cinemas-container">
+        
+            </div> -->
+            <form class="container__form row" id="form-element">
+                <h2>Book your movie ✍ </h2>
+                <!-- City -->
+                <div class="row" id="cities_row">
+                    <div class="col-12 col-s-12" id="cities_col">
+                        <label class="container__form--label" for="cities">City</label>
+                        <select name="cities" class="container__form--select" id="app_cities-select" required>
+                            <option value="">Select a city</option>
+                        </select>
+                    </div>
+                    <!-- </div> -->
+                    <!-- Theatres -->
+                    <!-- <div class="container__form--row"> -->
+                    <div class="cinemas_name">
+                    </div>
+                </div>
+                <!-- Movies -->
+                <div class="row">
+                    <div class="col-4 col-s-4">
+                        <label for="movies" class="container__form--label">Movie</label>
+                        <select name="movies" class="container__form--select" id="app_movies-select" required>
+                            <option value="">Select a movie</option>
+                        </select>
+                    </div>
+                    <!-- </div> -->
+                    <!-- Date -->
+                    <!-- <div class="container__form--row"> -->
+                    <div class="col-4 col-s-4">
+                        <label for="date" class="container__form--label">Date</label>
+                        <input type="date" name="date" class="container__form--input" id="app_date-input" required>
+                        <p class="error--label" id="app_date-error"></p>
+                    </div>
+                    <!-- </div> -->
+                    <!-- Number of tickets -->
+                    <!-- <div class="container__form--row"> -->
+                    <div class="col-4 col-s-4">
+                        <label for="tickets" class="container__form--label">Number of tickets</label>
+                        <input type="number" min="0" max="10" name="tickets" class="container__form--input"
+                            id="app_tickets-input" required placeholder="Enter a number">
+                        <p class="error--label" id="app_tickets-error"></p>
+                    </div>
+                </div>
+                <!-- Show times as square radio buttons with the time in them -->
+                <div class="row">
+                    <div class="col-12 col-s-12">
+                        <p class="container__form--label">Showtimes</p>
+                        <div class="container__form--radiobtn">
+                            <input type="radio" name="showtimes" id="ten" value="10:00" checked>
+                            <label class="radiobtn" for="ten">10:00</label>
+                            <input type="radio" name="showtimes" id="twelve" value="12:00">
+                            <label class="radiobtn" for="twelve">12:00</label>
+                            <input type="radio" name="showtimes" id="fourteen" value="14:00">
+                            <label class="radiobtn" for="fourteen">14:00</label>
+                            <input type="radio" name="showtimes" id="sixteen" value="16:00">
+                            <label class="radiobtn" for="sixteen">16:00</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- First Name -->
+                <div class="row">
+                    <div class="col-6 col-s-6">
+                        <label for="firstname" class="container__form--label">First Name</label>
+                        <input type="text" name="firstname" class="container__form--input" id="app_firstname-input"
+                            required placeholder="Enter your first name">
+                        <p class="error--label" id="app_firstname-error"></p>
+                    </div>
+                    <!-- </div> -->
+                    <!-- Last Name -->
+                    <!-- <div class="container__form--row"> -->
+                    <div class="col-6 col-s-6">
+                        <label for="lastname" class="container__form--label">Last Name</label>
+                        <input type="text" name="lastname" class="container__form--input" id="app_lastname-input"
+                            required placeholder="Enter your last name">
+                        <p class="error--label" id="app_lastname-error"></p>
+                    </div>
+                </div>
+                <!-- Email -->
+                <div class="row">
+                    <div class="col-4 col-s-4">
+                        <label for="email" class="container__form--label">Email</label>
+                        <input type="email" name="email" class="container__form--input" id="app_email-input" required
+                            placeholder="Enter your email">
+                        <p class="error--label" id="app_email-error"></p>
+                    </div>
+                    <!-- </div> -->
+                    <!-- Gender -->
+                    <!-- <div class="container__form--row"> -->
+                    <div class="col-4 col-s-4">
+                        <p class="container__form--label">Gender</p>
+                        <div class="container__form--radiobtn">
+                            <input type="radio" name="gender" id="male" value="Male" checked>
+                            <label class="radiobtn" for="male">Male</label>
+                            <input type="radio" name="gender" id="female" value="Female">
+                            <label class="radiobtn" for="female">Female</label>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                    <!-- Age -->
+                    <!-- <div class="container__form--row"> -->
+                    <div class="col-4 col-s-4">
+                        <label for="age" class="container__form--label">Age</label>
+                        <input type="number" name="age" class="container__form--input" id="app_age-input" required
+                            placeholder="Enter your age">
+                        <p class="error--label" id="app_age-error"></p>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div class="container__form--row">
+                    <div class="container__form--column">
+                        <!-- <p class="container__form--label">Results</p> -->
+                        <div class="container__form--results" id="app_results-container">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit -->
+                <div class="container__form--row">
+                    <div class="container__form--column">
+                        <input type="submit" value="Submit" class="container__form--button" id="app_submit-btn">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <div class="footer">
+        <p id="footer_text">
+        </p>
+    </div>
+
+    <dialog class="modal" id="modal">
+        <i class="material-symbols-outlined modal-close" id="close-modal">
+            close
+        </i>
+        <div id="modal-content" class="modal-content">
+            <!-- Results of the calculations in javascript -->
+        </div>
+    </dialog>
+
+    <script src="../scripts/perdomod.js"></script>
+</body>
+
+</html>
