@@ -45,12 +45,24 @@ html {
 .header {
     background-color: var(--quaternary-color);
     color: #ffffff;
-    padding: 15px;
+    padding: 16px;
 }
 
-.header h1 {
-    padding: 1.5rem 1rem;
+.header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
 }
+
+.header img {
+    width: 50px;
+    height: auto;
+
+}
+
 
 .header p {
     font-size: 1rem;
